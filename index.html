@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강의 디데이 카운터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎓 강의 디데이 카운터</h1>
+        <p class="subtitle">남은 강의 일수를 확인하세요</p>
+
+        <div class="days-container">
+            <div class="days" id="counter">125</div>
+            <div class="days-label">일 남았습니다</div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="decreaseDay()">✓ 하루 완료</button>
+            <button class="reset-btn" onclick="resetCounter()">↺ 초기화</button>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        <div class="progress-text" id="progressText">진행률: 0%</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
